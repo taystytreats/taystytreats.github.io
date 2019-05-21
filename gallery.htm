@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="taylorcss/homecss.css" rel="stylesheet" type="text/css">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+* {
+    box-sizing: border-box;
+}
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    display: flex; /**/
+    flex-wrap: wrap;
+    margin: 10px -16px;
+    padding: 0 4px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 3px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    flex: 25%;/* */
+    float: left;
+    width: 25%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.Content img {
+  margin-top: 8px;
+  vertical-align: middle;
+}/**/
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  background-color: hotpink;
+  font-size: 20px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #DFA452;
+}
+
+.btn.active {
+  background-color: #875F2D;
+  color: white;
+}
+</style>
+</head>
+<body>
+    <section class="category">
+      <div class = "navbar">
+        <nav>
+            <a href="default.htm">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">TAYsty Treats</button>
+              <div class="dropdown-content"></a>
+                  <a href="about.htm">About</a>
+                  <a href="testimony.htm">Testimony</a>
+              </div>
+            </div>
+            <a href="menu.htm">Menu</a>
+            <a href="gallery.htm">Gallery</a>
+            <div class="dropdown">
+              <button class="dropbtn">Contact</button>
+              <div class="dropdown-content"></a>
+                  <a href="order.htm">Order Inquiry</a>
+                  <a href="pickup.htm">Cake Contract</a>
+              </div>
+            </div>
+          <div>
+            <a href="https://www.paypal.me/TaystyTreats">PayPal</a>
+            <a href="https://cash.me/app/VDQXLSS"> Cash App</a>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <div class="header">
+      <img src="Taylornowhite.png" alt="Logo" style="width:500px;height:500px;">
+    </div>
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Taysty Treats</button>
+  <button class="btn" onclick="filterSelection('cake')"> Cakes</button>
+  <button class="btn" onclick="filterSelection('ciaj')"> Cake In A Jar</button>
+  <button class="btn" onclick="filterSelection('cc')"> Cup Cakes</button>
+  <button class="btn" onclick="filterSelection('cp')"> Cake Pops</button>
+  <button class="btn" onclick="filterSelection('pie')"> Pies</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column cake">
+    <div class="content">
+      <img src="pic/cake1.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake2.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake3.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake4.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake5.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake6.png" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake7.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake8.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake9.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake10.png" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake12.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+  <div class="column cake">
+    <div class="content">
+    <img src="pic/cake13.jpg" alt="Cake" style="width:100%;">
+    </div>
+  </div>
+	
+
+  <div class="column ciaj">
+    <div class="content">
+      <img src="pic/CINJ1.PNG" alt="1" style="width:100%;">
+    </div>
+  </div>
+  <div class="column ciaj">
+    <div class="content">
+    <img src="pic/CINJ2.PNG" alt="next" style="width:100%;">
+    </div>
+  </div>
+
+  <div class="column cc">
+    <div class="content">
+      <img src="pic/cc1.jpg" alt="next" style="width:100%;">
+    </div>
+  </div>
+
+  <div class="column cp">
+    <div class="content">
+    <img src="pic/cp2.jpg" alt="next" style="width:100%;">
+    </div>
+  </div>
+
+  <div class="column pie">
+    <div class="content">
+    <img src="pic/pie1.jpg" alt="next" style="width:100%;">
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

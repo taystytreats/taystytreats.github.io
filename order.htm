@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="taylorcss/homecss.css" rel="stylesheet" type="text/css">
+    <link href="~/Documents/progs/info.php" rel="stylesheet" type="text/css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <style>
+  h2{
+    font-size: 55px;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+  }
+  h3 {
+    font-family: Arial;
+    font-size: 15px;
+  }
+  body{
+    font-size: 25px;
+  }
+  input[type=text], select, textarea{
+    font-size:15px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit]{
+    background-color: #875F2D;
+    font-size: 20px;
+    color: white;
+    padding: 12px 70px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+      background-color: #F1BF5B;
+  }
+  .container {
+      border-radius: 5px;
+      padding-left: 170px;
+      padding-right: 170px;
+  }
+  .next {
+      background-color: #875F2D;
+      color: white;
+  }
+
+  </style>
+  </head>
+  <body>
+    <section class="category">
+      <div class = "navbar">
+        <nav>
+            <a href="default.htm">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">TAYsty Treats</button>
+              <div class="dropdown-content"></a>
+                  <a href="about.htm">About</a>
+                  <a href="testimony.htm">Testimony</a>
+              </div>
+            </div>
+            <a href="menu.htm">Menu</a>
+            <a href="gallery.htm">Gallery</a>
+            <div class="dropdown">
+              <button class="dropbtn">Contact</button>
+              <div class="dropdown-content"></a>
+                  <a href="order.htm">Order Inquiry</a>
+                  <a href="pickup.htm">Cake Contract</a>
+              </div>
+            </div>
+            <div class="socials">
+          <a href="https://twitter.com/Taysty_Treats" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/taysty_treats1/" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com/TAYstyTreats1/" class="fa fa-facebook"></a>
+          </div>
+          <div>
+            <a href="https://www.paypal.me/TaystyTreats">PayPal</a>
+            <a href="https://cash.me/app/VDQXLSS"> Cash App</a>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <div class="header">
+      <img src="Taylornowhite.png" alt="Logo" style="width:500px;height:500px;">
+    </div>
+    <section class="container">
+      <div>
+      	<h2>Order</h2>
+        <form method="post"action="info.php">
+          <label for="firstn">First Name</label>
+          <input type="text" name="firstn" placeholder="First Name">
+          <label for="lastn">Last Name</label>
+          <input type="text" name="lastn" placeholder="Last Name">
+          <label for="Phone">Phone Number</label>
+          <input type="text" name="phone" placeholder="(i.g. 713-XXX-XXXX)">
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="Email">
+          <label for="Eventdate">Event Date</label>
+          <input type="text" name="eventDate" placeholder="(i.g. August 23, 2018)">
+          <label for="EventType">Event Type</label>
+          <input type="text" name="EventType" placeholder="(i.g. Wedding, Birthday)">
+          <label for="servings">Number of Servings</label>
+          <input type="text" name="servings" placeholder="(i.g. 50 people)">
+          <label for="flavor">Cake Flavor</label>
+          <input type="text" name="flavor" placeholder="(i.g. Chocolate)">
+          <label for="flosting">Cake Frosting</label>
+          <input type="text" name="frosting" placeholder="(i.g. Vanilla)">
+          <label for="filling">Cake filling</label>
+          <input type="text" name="filling" placeholder="(i.g. Strawberry)">
+
+          <label for="Options">Delivery</label>
+          <select id="options" name="options">
+            <option value="Delivery">Delivery</option>
+            <option value="Pick up">Pick up</option>
+          </select>
+          <label for="Other">Other Notes</label>
+          <textarea name="other" rows="8" cols="80" placeholder="Request..."
+            style="height:100px">
+          </textarea>
+          <label for="Options">How did you here about us?</label>
+          <select id="hear" name="hear">
+            <option value="Family and Friend">Friends and Family</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Twitter">Twitter</option>
+            <option value="instagram">instagram</option>
+            <option value="Others">Others</option>
+          </select>
+          <h3>We always do our best to answer every inquiry within 72 hours, but if you don’t hear
+            back from us within that time please feel free to give us a call. (E-mails sent to us on Fridays may
+            not be returned until Tuesday! If time is of the essence, please call!)</h3>
+          <div class="container">
+			<embed src= "pdf/editTaystyTreatsCakeContract.pdf" type="application/pdf" width="100%" height="1000px" />
+          </div>
+    		<div class="container">
+      			<form method="post"action="info.php">
+        		<label for="Signature">Signature</label>
+        		<input type="text" name="Signature" placeholder="FULL NAME">
+        		<input type="submit" name="submit" value="submit">
+      			</form>
+    		</div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
