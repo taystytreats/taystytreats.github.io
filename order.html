@@ -12,7 +12,6 @@
   h2{
     font-size: 55px;
     font-family: 'Cookie', cursive;
-    text-align: center;
   }
   h3 {
     font-family: Arial;
@@ -47,6 +46,32 @@
   input[type=submit]:hover {
       background-color: #F1BF5B;
   }
+  textarea{
+    background-color: #DFA452;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+  }
+  .tooltip button {
+    background-color: #875F2D;
+    font-size: 20px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .tooltip button a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 32px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
   .container {
       border-radius: 5px;
       padding-left: 170px;
@@ -56,8 +81,50 @@
       background-color: #875F2D;
       color: white;
   }
-
-  </style>
+  .tooltip {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* Style the footer */
+footer {
+  background-color: hotpink;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+</style>
   </head>
   <body>
     <section class="category">
@@ -94,8 +161,21 @@
     </section>
     <div class="header">
       <img src="Taylornowhite.png" alt="Logo" style="width:500px;height:500px;">
-      <p>If you would like to place an order today, please feel free to call or email TaystyTreats. <br>Our staff is diligently working on the online ordering system.</p>
+      <h2>Order Template</h2>
+      <!--
+      <p>If you would like to place an order today, please feel free to call or email TaystyTreats. <br>Our staff is diligently working on the online ordering system.</p> -->
     </div>
+    <textarea name="name" rows="10" cols="80" id="myInput">First Name:&#13;&#10;Last Name:&#13;&#10;Phone Number:&#13;&#10;Email:&#13;&#10;Event Date:&#13;&#10;Event Type:&#13;&#10;Servings:&#13;&#10;Flavor:&#13;&#10;Frosting:&#13;&#10;Filling:&#13;&#10;</textarea>
+  <div class="tooltip">
+    <button onclick="myFunction()" onmouseout="outFunc()">
+      <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+      Copy Email
+    </button>
+    <button><a href="mailto:taystytreats41@gmail.com?Subject=Vision713" target="_top" style="font-size:20px">Email TaystyTreats</a></button>
+  </div>
+  <footer>
+    <h2><a href="taystytreats.github.io/pickup.html">Cake Contract</a></h2>
+  </footer>
     <!--
     <section class="container">
       <div>
@@ -156,5 +236,20 @@
       </div>
     </section>
   -->
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
   </body>
 </html>
