@@ -12,6 +12,26 @@
   	table, th, td {
   		border: 1px solid black;
   	}
+    * {
+      box-sizing: border-box;
+    }
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
   </style>
   <body>
     <section class="category">
@@ -48,12 +68,15 @@
     </section>
     <div class="header">
       <img src="Taylornowhite.png" alt="Logo" style="width:500px;height:500px;">
+      <h2>menu</h2>
     </div>
-    <section class="container">
-      <div>
-        <img src="pic/taymenu1.png" alt="Logo" style="width:100%">
-        <img src="pic/taymenu2.png" alt="Logo" style="width:100%">
-      </div>
-    </section>
+    <div class="row">
+      <div class="column">
+      <img src="pic/UpdatedMenu.jpg" alt="Logo" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="pic/UpdatedMenu2.jpg" alt="Logo" style="width:100%">
+    </div>
+    </div>
   </body>
 </html>
