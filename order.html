@@ -48,11 +48,11 @@
   }
   textarea{
     background-color: #DFA452;
-    width: 50%;
+    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30px;
+    font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
   .tooltip button {
     background-color: #875F2D;
@@ -73,9 +73,9 @@
     text-decoration: none;
   }
   .container {
-      border-radius: 5px;
-      padding-left: 170px;
-      padding-right: 170px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
   }
   .next {
       background-color: #875F2D;
@@ -127,56 +127,40 @@ footer {
 </style>
   </head>
   <body>
-    <section class="category">
-      <div class = "navbar">
-        <nav>
-            <a href="taystytreats.github.io/index.htm">Home</a>
-            <div class="dropdown">
-              <button class="dropbtn">TAYsty Treats</button>
-              <div class="dropdown-content"></a>
-                  <a href="taystytreats.github.io/about.html">About</a>
-                  <a href="taystytreats.github.io/testimony.html">Testimony</a>
-              </div>
-            </div>
-            <a href="taystytreats.github.io/menu.html">Menu</a>
-            <a href="taystytreats.github.io/gallery.html">Gallery</a>
-            <div class="dropdown">
-              <button class="dropbtn">Contact</button>
-              <div class="dropdown-content"></a>
-                  <a href="taystytreats.github.io/order.html">Order Inquiry</a>
-                  <a href="taystytreats.github.io/pickup.html">Cake Contract</a>
-              </div>
-            </div>
-            <div class="socials">
-          <a href="https://twitter.com/Taysty_Treats" class="fa fa-twitter"></a>
-          <a href="https://www.instagram.com/taysty_treats1/" class="fa fa-instagram"></a>
-          <a href="https://www.facebook.com/TAYstyTreats1/" class="fa fa-facebook"></a>
-          </div>
-          <div>
-            <a href="https://www.paypal.me/TaystyTreats">PayPal</a>
-            <a href="https://cash.me/app/VDQXLSS"> Cash App</a>
-          </div>
-        </nav>
-      </div>
-    </section>
+    <div class="topnav" id="myTopnav">
+    <a href="taystytreats.github.io/index.html" class="active">Home</a>
+    <a href="taystytreats.github.io/about.html">About</a>
+    <a href="taystytreats.github.io/menu.html">Menu</a>
+    <a href="taystytreats.github.io/gallery.html">Gallery</a>
+    <a href="taystytreats.github.io/order.html">Order Inquiry</a>
+    <!--<a href="taystytreats.github.io/pickup.html">Cake Contract</a>-->
+    <a href="https://twitter.com/Taysty_Treats">Twitter</a>
+    <a href="https://www.instagram.com/taysty_treats1/">Instagram</a>
+    <a href="https://www.facebook.com/TAYstyTreats1/">Facebook</a>
+    <a href="javascript:void(0);" class="icon" onclick="theFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
     <div class="header">
-      <img src="Taylornowhite.png" alt="Logo" style="width:500px;height:500px;">
-      <h2>Order Template</h2>
+      <img src="Taylornowhite.png" alt="Logo" style="max-width:50%;padding:10px;">
       <!--
       <p>If you would like to place an order today, please feel free to call or email TaystyTreats. <br>Our staff is diligently working on the online ordering system.</p> -->
     </div>
-    <textarea name="name" rows="10" cols="80" id="myInput">First Name:&#13;&#10;Last Name:&#13;&#10;Phone Number:&#13;&#10;Email:&#13;&#10;Event Date:&#13;&#10;Event Type:&#13;&#10;Servings:&#13;&#10;Flavor:&#13;&#10;Frosting:&#13;&#10;Filling:&#13;&#10;</textarea>
-  <div class="tooltip">
-    <button onclick="myFunction()" onmouseout="outFunc()">
-      <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-      Copy Email
-    </button>
-    <button><a href="mailto:taystytreats41@gmail.com?Subject=Vision713" target="_top" style="font-size:20px">Email TaystyTreats</a></button>
+  <div class="container">
+    <h2>Order Template</h2>
+    <textarea name="name" rows="10" cols="80" id="myInput">First Name:&#13;&#10;Last Name:&#13;&#10;Phone #:&#13;&#10;Email:&#13;&#10;Event Date:&#13;&#10;Event Type:&#13;&#10;Servings:&#13;&#10;Flavor:&#13;&#10;Frosting:&#13;&#10;Filling:&#13;&#10;</textarea>
+    <div class="tooltip">
+      <button onclick="myFunction()" onmouseout="outFunc()">
+        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+        Copy Email
+      </button>
+      <button><a href="mailto:taystytreats41@gmail.com?Subject=Vision713" target="_top" style="font-size:20px">Email TaystyTreats</a></button>
+    </div>
   </div>
-  <footer>
-    <h2><a href="taystytreats.github.io/pickup.html">Cake Contract</a></h2>
-  </footer>
     <!--
+    <footer>
+      <h2><a href="taystytreats.github.io/pickup.html">Cake Contract</a></h2>
+    </footer>
     <section class="container">
       <div>
       	<h2>Order</h2>
@@ -237,6 +221,14 @@ footer {
     </section>
   -->
 <script>
+function theFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 function myFunction() {
   var copyText = document.getElementById("myInput");
   copyText.select();

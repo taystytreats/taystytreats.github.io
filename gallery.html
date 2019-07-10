@@ -10,22 +10,10 @@
 * {
     box-sizing: border-box;
 }
-/* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
-  }
 
 h1 {
     font-size: 50px;
     word-break: break-all;
-}
-
-.row {
-    display: flex; /**/
-    flex-wrap: wrap;
-    margin: 10px -16px;
-    padding: 0 4px;
 }
 
 /* Add padding BETWEEN each column */
@@ -87,38 +75,25 @@ h1 {
 </style>
 </head>
 <body>
-    <section class="category">
-      <div class = "navbar">
-        <nav>
-            <a href="taystytreats.github.io/index.html">Home</a>
-            <div class="dropdown">
-              <button class="dropbtn">TAYsty Treats</button>
-              <div class="dropdown-content"></a>
-                  <a href="taystytreats.github.io/about.html">About</a>
-                  <a href="taystytreats.github.io/testimony.html">Testimony</a>
-              </div>
-            </div>
-            <a href="taystytreats.github.io/menu.html">Menu</a>
-            <a href="taystytreats.github.io/gallery.html">Gallery</a>
-            <div class="dropdown">
-              <button class="dropbtn">Contact</button>
-              <div class="dropdown-content"></a>
-                  <a href="taystytreats.github.io/order.html">Order Inquiry</a>
-                  <a href="taystytreats.github.io/pickup.html">Cake Contract</a>
-              </div>
-            </div>
-          <div>
-            <a href="https://www.paypal.me/TaystyTreats">PayPal</a>
-            <a href="https://cash.me/app/VDQXLSS"> Cash App</a>
-          </div>
-        </nav>
-      </div>
-    </section>
+  <div class="topnav" id="myTopnav">
+  <a href="taystytreats.github.io/index.html" class="active">Home</a>
+  <a href="taystytreats.github.io/about.html">About</a>
+  <a href="taystytreats.github.io/menu.html">Menu</a>
+  <a href="taystytreats.github.io/gallery.html">Gallery</a>
+  <a href="taystytreats.github.io/order.html">Order Inquiry</a>
+  <!--<a href="taystytreats.github.io/pickup.html">Cake Contract</a>-->
+  <a href="https://twitter.com/Taysty_Treats">Twitter</a>
+  <a href="https://www.instagram.com/taysty_treats1/">Instagram</a>
+  <a href="https://www.facebook.com/TAYstyTreats1/">Facebook</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
     <div class="header">
-      <img src="Taylornowhite.png" alt="Logo" style="width:500px;height:500px;">
+      <img src="Taylornowhite.png" alt="Logo" style="max-width:50%;padding:10px;">
     </div>
 <!-- MAIN (Center website) -->
-<div class="main">
+<div>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Taysty Treats</button>
@@ -130,103 +105,115 @@ h1 {
 </div>
 
 <!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column cake">
-    <div class="content">
-      <img src="pic/cake1.jpg" alt="Cake" style="width:100%;">
+<div class="container">
+  <div class="row">
+    <div class="column cake">
+      <div class="content">
+        <img src="pic/cake1.jpg" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake2.jpg" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake2.jpg" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake3.jpg" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake3.jpg" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake4.jpg" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake4.jpg" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake5.JPG" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake5.JPG" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake6.PNG" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake6.PNG" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake7.JPG" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake7.JPG" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake8.JPG" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake8.JPG" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake9.jpg" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake9.jpg" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake10.PNG" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake10.PNG" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake12.JPG" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake12.JPG" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column cake">
-    <div class="content">
-    <img src="pic/cake13.JPG" alt="Cake" style="width:100%;">
+    <div class="column cake">
+      <div class="content">
+      <img src="pic/cake13.JPG" alt="Cake" style="width:100%;">
+      </div>
     </div>
-  </div>
 
 
-  <div class="column ciaj">
-    <div class="content">
-      <img src="pic/CINJ1.PNG" alt="1" style="width:100%;">
+    <div class="column ciaj">
+      <div class="content">
+        <img src="pic/CINJ1.PNG" alt="1" style="width:100%;">
+      </div>
     </div>
-  </div>
-  <div class="column ciaj">
-    <div class="content">
-    <img src="pic/CINJ2.PNG" alt="next" style="width:100%;">
+    <div class="column ciaj">
+      <div class="content">
+      <img src="pic/CINJ2.PNG" alt="next" style="width:100%;">
+      </div>
     </div>
-  </div>
 
-  <div class="column cc">
-    <div class="content">
-      <img src="pic/cc1.jpg" alt="next" style="width:100%;">
+    <div class="column cc">
+      <div class="content">
+        <img src="pic/cc1.jpg" alt="next" style="width:100%;">
+      </div>
     </div>
-  </div>
 
-  <div class="column cp">
-    <div class="content">
-    <img src="pic/cp2.jpg" alt="next" style="width:100%;">
+    <div class="column cp">
+      <div class="content">
+      <img src="pic/cp2.jpg" alt="next" style="width:100%;">
+      </div>
     </div>
-  </div>
 
-  <div class="column pie">
-    <div class="content">
-    <img src="pic/pie1.jpg" alt="next" style="width:100%;">
+    <div class="column pie">
+      <div class="content">
+      <img src="pic/pie1.jpg" alt="next" style="width:100%;">
+      </div>
     </div>
+  <!-- END GRID -->
   </div>
-<!-- END GRID -->
+  <!-- END MAIN -->
+  </div>
 </div>
-<!-- END MAIN -->
-</div>
+
 
 <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
